@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+
+<body>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 nav-left">
+				<a href="#" src="img/logo-rip-curl.png"></a>
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 nav-right">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li class="disabled">
+						<a href="#">Messages</a>
+					</li>
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li class="disabled">
+						<a href="#">Messages</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="col-md-12 banniere">
+			<img class="img-rounded" src="img/logo-rip-curl.png" alt="logo de rip-curl" />
+		</div>
+
+		<div class="titre-h">
+			<h1>Bienvenue dans l'outil stock PDF </h1>
+		</div>
+			
+
+		<p>Veuillez choisir le type de votre fichier CSV :</p>
+
+		<div class="row bloc-telechargement video">
+		    <div class="col-md-4 margin">
+		        <form action="pdf3.php" method="post" enctype="multipart/form-data">
+		        <!-- On limite le fichier à 100Mo -->
+		            <input  type="hidden" name="MAX_FILE_SIZE" value="1000000000">
+		            <input type="radio" name="valeur" value="EAN" checked> EAN  <a href="https://openclassrooms.com" style="font-size:8pt;">(Exemple)</a><br>
+		           <input type="radio" name="valeur" value="Style code/Couleur/Taille"> Style code/Couleur/Taille <a href="https://openclassrooms.com" style="font-size:8pt;">(Exemple)</a><br><br>
+		           <input  class="bouton-envoi" type="file" name="mon_fichier">
+		            <input class="bouton-import" type="submit" name="envoyer" value="Envoyer">
+		    </div>
+		</div>
+	</div>
+</body>
+
